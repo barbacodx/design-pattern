@@ -1,10 +1,34 @@
-# Getting Started with Create React App
+# Bubble Sort React Component - Typescript Design Pattern
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+</br>Sorter Component in Typescript for React.</br></br>
+Example with Collection Numbers</br>
+( 5 1 4 2 8 ) –> ( 1 2 4 5 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1.
 
-## Available Scripts
 
-In the project directory, you can run:
+## How to use Sorter Class(example)
+
+    //numbers Collection
+    const numberCollection = new NumbersCollection([9, 3, -5, 0]);
+    const sorter = new Sorter(numberCollection);
+    sorter.sort();
+    console.log(numberCollection.data);
+
+    //characters Collection
+    const charactersCollection = new CharactersCollection('Riccardo');
+    const charactersSorter = new Sorter(charactersCollection);
+    charactersSorter.sort();
+    console.log(charactersCollection.data);
+
+    //linkedList collection
+    const linkedList = new LinkedList();
+    linkedList.add(500);
+    linkedList.add(-20);
+    linkedList.add(300);
+    linkedList.add(3);
+    const sorterLinked = new Sorter(linkedList);
+    sorterLinked.sort();
+    linkedList.print();
 
 ### `npm start`
 
@@ -39,8 +63,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## To Do 
+ * Inheritance CLASS SORTER *
+- Implement abstract method without interface
+- Interface used between different classes - Promote loose coupling
+- Abstract classes used for similar classes - Strongly couples classes together
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).

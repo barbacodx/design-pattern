@@ -5,7 +5,7 @@ import { CharactersCollection} from "./CharactersCollection";
 import { LinkedList } from "./LinkedList";
 
 
-const SorterC = (props: any) => {
+const SorterC = () => {
     //numbers Collection
     const numberCollection = new NumbersCollection([9, 3, -5, 0]);
     const sorter = new Sorter(numberCollection);

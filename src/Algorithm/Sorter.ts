@@ -29,8 +29,8 @@ export class Sorter {
                // }
 
 
-            }//end for 2
-        }//end fot 1
+            }
+        }
     }
 
 }

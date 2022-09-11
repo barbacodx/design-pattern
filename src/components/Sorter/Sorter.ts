@@ -20,8 +20,8 @@ export class Sorter {
                     //move number before - Swapping
                     this.collection.swap(j, j + 1);
                 }
-            }//end for 2
-        }//end for 1
+            }
+        }
     }
 }
 
